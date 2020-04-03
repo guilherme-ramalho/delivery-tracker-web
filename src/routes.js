@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Container } from 'reactstrap';
 
 import Header from './components/Header';
 
@@ -11,11 +12,19 @@ export default function Routes () {
   return(
     <BrowserRouter>
       <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/orders" component={Order} />
-        <Route exact path="/deliveries" component={Delivery} />
-      </Switch>
+      <Container>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/orders">
+            <Order />
+          </Route>
+          <Route exact path="/deliveries">
+            <Delivery />
+          </Route>
+        </Switch>
+      </Container>
     </BrowserRouter>
   );
 }
