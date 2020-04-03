@@ -1,11 +1,8 @@
 import React from 'react';
 
 // import { Container } from './styles';
+import OrderTable from '../../components/OrderTable';
 
 export default function Order() {
-  return (
-    <div>
-      <p>teste</p>
-    </div>
-  );
+  return <OrderTable />;
 }

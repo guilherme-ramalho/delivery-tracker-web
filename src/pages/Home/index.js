@@ -1,8 +1,6 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-import LocationAutoComplete from '../../components/LocationAutoComplete';
-
 // import { Container } from './styles';
 
 export default function Home() {
@@ -13,9 +11,6 @@ export default function Home() {
 
   return (
     <Form onSubmit={(e) => submitForm(e)}>
-      <FormGroup>
-        <LocationAutoComplete />
-      </FormGroup>
       <FormGroup>
         <Label for="orderDescription">Order description</Label>
         <Input type="text" name="orderDescription" id="orderDescription" placeholder="What do you want to order?" />

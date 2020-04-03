@@ -12,7 +12,7 @@ export default function Routes () {
   return(
     <BrowserRouter>
       <Header />
-      <Container>
+      {/* <Container> */}
         <Switch>
           <Route exact path="/">
             <Home />
@@ -24,7 +24,7 @@ export default function Routes () {
             <Delivery />
           </Route>
         </Switch>
-      </Container>
+      {/* </Container> */}
     </BrowserRouter>
   );
 }
